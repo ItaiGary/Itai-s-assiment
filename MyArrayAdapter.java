@@ -1,6 +1,7 @@
-package com.example.gotapass;
+package com.example.foodlist;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -39,6 +40,7 @@ public class MyArrayAdapter extends ArrayAdapter {
         foodName.setText(_objects.get(position).get_name());
 
         TextView foodCalories = result.findViewById(R.id.calories);
+
         foodCalories.setText(_objects.get(position).get_calories() + " Calories");
 
 

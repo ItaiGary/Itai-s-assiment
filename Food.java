@@ -1,11 +1,14 @@
-package com.example.gotapass;
+package com.example.foodlist;
 
 public class Food {
     String _name;
     int _calories;
     int _image;
 
-    public Food(String _name, int _calories, int _image) {
+    public Food(String name, int calories, int image) {
+        _name = name;
+        _calories = calories;
+        _image = image;
     }
 
     public String get_name() {
